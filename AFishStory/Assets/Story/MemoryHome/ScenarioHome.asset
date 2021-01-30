@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8dec93516ef804586f9f6d72ea5754, type: 3}
+  m_Name: ScenarioHome
+  m_EditorClassIdentifier: 
+  texts:
+  - wait: 0
+    duration: 0
+    text: A warm feeling enveloped my body as I swim into this place.
+    trigger: {fileID: 11400000, guid: 0eb9e271316eb804ab778fa8dc829a25, type: 2}
+  - wait: 0
+    duration: 0
+    text: 'I know this place! This is my home! I remember life here with my parents
+      and my little brother. '
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0
+    text: Playing around
+    trigger: {fileID: 11400000, guid: b387cd5c3b9325d4d8dcaa26287c4cb5, type: 2}
+  - wait: 0
+    duration: 0
+    text: I love my family!
+    trigger: {fileID: 11400000, guid: f2e8bab1b3dcd6d46bf3d8da998789db, type: 2}
+  - wait: 0
+    duration: 0
+    text: 'How would my brother and parents be at the moment? I hope they are well. '
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0
+    text: It was so peaceful.
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0
+    text: I am home again.
+    trigger: {fileID: 11400000, guid: 0029ea7832cc0dd46a3d66ad3eeae645, type: 2}
