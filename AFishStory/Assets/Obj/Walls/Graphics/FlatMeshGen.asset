@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7d9aa338f6fe64eaa0be90a2068738, type: 3}
   m_Name: FlatMeshGen
   m_EditorClassIdentifier: 
-  minPolyPathResolution: 0.1
+  minPolyPathResolution: 1

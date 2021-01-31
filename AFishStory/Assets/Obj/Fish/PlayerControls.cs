@@ -13,6 +13,10 @@ public class PlayerControls : MonoBehaviour
 
     public Rigidbody2D body;
 
+    public Animator animator;
+
+    public bool controlsActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +31,7 @@ public class PlayerControls : MonoBehaviour
 
     IEnumerator DashCoroutine () {
         Debug.Log("[Dash] Start");
+        animator.SetTrigger("Dash");
         float startTime = Time.time;
         Vector3 initialDir = GetMouseInScene() - transform.position;
 
@@ -35,6 +40,7 @@ public class PlayerControls : MonoBehaviour
             yield return new WaitForFixedUpdate();
             Vector3 dir = GetMouseInScene() - transform.position;
             body.AddForce(dir.normalized*dashForce);
+            SendMessage("OnDash");
         }
 
         Debug.Log("[Dash] End");
@@ -46,27 +52,41 @@ public class PlayerControls : MonoBehaviour
     }
 
     void Update() {
+        if(!controlsActive) {
+            return;
+        }
         if(Input.GetMouseButtonDown(0)) {
             // Click
-            startHoldDownTime = Time.time;
+            //startHoldDownTime = Time.time;
+
+            if((GetMouseInScene() - transform.position).magnitude > 2f) {
+                DoDash();
+            }
         }
 
         if(Input.GetMouseButtonUp(0)) {
             // Release button -> potentially "swooosh!"
-            float clickDuration = Time.time - startHoldDownTime;
+            /*float clickDuration = Time.time - startHoldDownTime;
             if(clickDuration < dashTreshhold) {
                 // Dash
                 DoDash();
-            }
+            }*/
         }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(!controlsActive) {
+            return;
+        }
         if(Input.GetMouseButton(0)) {
             Vector3 dir = GetMouseInScene() - transform.position;
             body.AddForce(dir.normalized*swimForce);
+            SendMessage("OnSwim");
+            animator.SetBool("Swim", true);
+        } else {
+            animator.SetBool("Swim", false);
         }
     }
 }

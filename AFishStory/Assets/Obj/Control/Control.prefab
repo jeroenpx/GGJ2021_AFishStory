@@ -186,6 +186,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6484044303960975437}
   - component: {fileID: 3747569292332903286}
+  - component: {fileID: 4602102914093194918}
+  - component: {fileID: 2470114800323527840}
+  - component: {fileID: 7307799274819831822}
   m_Layer: 0
   m_Name: Control
   m_TagString: Untagged
@@ -222,8 +225,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445b698707afaea48853953bcb4ad9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introScenario: {fileID: 0}
+  introScenario: {fileID: 11400000, guid: b75f6d0ff395fef4b983048bd13657b7, type: 2}
   revealer: {fileID: 6800245466038892800}
+--- !u!114 &4602102914093194918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099492697735088021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d415624a52e7e724498ad7a39e7aa007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: c3d04ccea69e6f148991fa45b3290df6, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!95 &2470114800323527840
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099492697735088021}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f005b1dd545b544385a4e5652fe184e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7307799274819831822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099492697735088021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844677bd370c09d41be8f7f003ea19f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controls: {fileID: 3996592350761543545}
+  fish: {fileID: 6800245466439888785}
+  fishAnimator: {fileID: 6270560376945964164}
+  camControl: {fileID: 1983823925879496071}
 --- !u!1 &5444112761246620385
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +452,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2542120888176938514}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &6800245466439888785 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 9014023108838760835, guid: 60977e78e15c49a4fb5b42b0c685f185,
+    type: 3}
+  m_PrefabInstance: {fileID: 2542120888176938514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3996592350761543545 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1455176064879585643, guid: 60977e78e15c49a4fb5b42b0c685f185,
+    type: 3}
+  m_PrefabInstance: {fileID: 2542120888176938514}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06b5a41aed98b54c9db866be7820194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &6270560376945964164 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8377517784579701398, guid: 60977e78e15c49a4fb5b42b0c685f185,
+    type: 3}
+  m_PrefabInstance: {fileID: 2542120888176938514}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3753280307163455584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -483,3 +561,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3753280307163455584}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1983823925879496071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3427698724183588327, guid: 69c1af909c306864f9f41e2ca05f1d88,
+    type: 3}
+  m_PrefabInstance: {fileID: 3753280307163455584}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01eca88595bc0e74781dec90164801c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

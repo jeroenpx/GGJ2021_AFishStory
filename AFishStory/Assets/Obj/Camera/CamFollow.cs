@@ -11,6 +11,8 @@ public class CamFollow : MonoBehaviour
     private Vector3 currentVelocity;
     public float lookaheadAmount = .1f;
 
+    public bool lookAheadEnabled = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,9 @@ public class CamFollow : MonoBehaviour
         float dist = cursorpos.magnitude;
         if(dist>1) {
             cursorpos /= dist;
+        }
+        if(!lookAheadEnabled) {
+            cursorpos = Vector3.zero;
         }
 
         // Fish target position

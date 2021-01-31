@@ -17,12 +17,12 @@ public class PolyPathMeshGen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        poly = GetComponent<PolygonCollider2D>();
-        genImpl.Paint(transform, poly, GetComponent<MeshFilter>());
+        
     }
 
     [ContextMenu("Generate Mesh")]
     protected void MenuDoPaint() {
-        Start();
+        poly = GetComponent<PolygonCollider2D>();
+        genImpl.Paint(transform, poly, GetComponent<MeshFilter>());
     }
 }

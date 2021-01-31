@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ScenarioIntroWakeUp
   m_EditorClassIdentifier: 
   texts:
-  - wait: 0
+  - wait: 3
     duration: 1
     text: Uh... Oh?
     trigger: {fileID: 11400000, guid: c3d04ccea69e6f148991fa45b3290df6, type: 2}
