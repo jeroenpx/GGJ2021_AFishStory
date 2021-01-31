@@ -17,15 +17,19 @@ MonoBehaviour:
     duration: 0.5
     text: Hmmm
     trigger: {fileID: 0}
+    audio: {fileID: 8300000, guid: c0fd83554533abd4fa4ca93763a83ac1, type: 3}
   - wait: 0
     duration: 0.5
     text: These jellyfish... I know them, I remember!
     trigger: {fileID: 0}
+    audio: {fileID: 0}
   - wait: 0
     duration: 0.5
     text: I think one is Bob.
     trigger: {fileID: 0}
+    audio: {fileID: 0}
   - wait: 0
     duration: 0.5
     text: The other ones, Martin and Marry.
     trigger: {fileID: 0}
+    audio: {fileID: 0}

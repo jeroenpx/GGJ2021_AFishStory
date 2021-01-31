@@ -12,6 +12,8 @@ public class StoryMgr : MonoBehaviour
 
     public TextRevealer revealer;
 
+    public AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +55,14 @@ public class StoryMgr : MonoBehaviour
             }
             if(e.trigger) {
                 e.trigger.Raise();
+            }
+            if(e.audio) {
+                // Stop previous audio if any - NOTE: we don't fade out so you might hear a "click"
+                // Whatever
+                source.Stop();
+
+                // Play new audio!
+                source.PlayOneShot(e.audio);
             }
             Debug.Log("Trigger text: "+e.text);
             bool moved = false;

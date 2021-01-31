@@ -17,7 +17,9 @@ MonoBehaviour:
     duration: 1
     text: Uh... Oh?
     trigger: {fileID: 11400000, guid: c3d04ccea69e6f148991fa45b3290df6, type: 2}
+    audio: {fileID: 8300000, guid: 75b119cc83b8a1546b4d287c5818ced6, type: 3}
   - wait: 1
     duration: 0.8
     text: What was I doing?
     trigger: {fileID: 11400000, guid: 98e3bde37af534e46ad567db28c0cb2f, type: 2}
+    audio: {fileID: 0}

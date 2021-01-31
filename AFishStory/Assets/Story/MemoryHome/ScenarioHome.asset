@@ -17,24 +17,30 @@ MonoBehaviour:
     duration: 0
     text: A warm feeling enveloped my body as I swim into this place.
     trigger: {fileID: 11400000, guid: 0eb9e271316eb804ab778fa8dc829a25, type: 2}
+    audio: {fileID: 8300000, guid: 66770e0066b68d44d8470f9ac675eacc, type: 3}
   - wait: 0
     duration: 0
     text: 'I know this place! This is my home! I remember life here with my parents
       and my little brother. '
     trigger: {fileID: 0}
+    audio: {fileID: 0}
   - wait: 0
     duration: 0
     text: I love my family!
     trigger: {fileID: 0}
+    audio: {fileID: 0}
   - wait: 0
     duration: 0
     text: 'How would my brother and parents be at the moment? I hope they are well. '
     trigger: {fileID: 0}
+    audio: {fileID: 0}
   - wait: 0
     duration: 0
     text: It was so peaceful.
     trigger: {fileID: 0}
+    audio: {fileID: 0}
   - wait: 0
     duration: 0
     text: I am home again.
     trigger: {fileID: 11400000, guid: 0029ea7832cc0dd46a3d66ad3eeae645, type: 2}
+    audio: {fileID: 0}

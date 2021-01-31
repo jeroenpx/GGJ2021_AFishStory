@@ -17,23 +17,29 @@ MonoBehaviour:
     duration: 1
     text: Uh... Oh?
     trigger: {fileID: 11400000, guid: c3d04ccea69e6f148991fa45b3290df6, type: 2}
+    audio: {fileID: 8300000, guid: 75b119cc83b8a1546b4d287c5818ced6, type: 3}
   - wait: 1
     duration: 0.8
     text: What was I doing?
     trigger: {fileID: 11400000, guid: 98e3bde37af534e46ad567db28c0cb2f, type: 2}
+    audio: {fileID: 0}
   - wait: 3
-    duration: 2
+    duration: 8
     text: Actually, where am I? How did I get here? Why does it feel so familiar?
     trigger: {fileID: 11400000, guid: 0fa4eca8cfab0484283dc68ef0c1b630, type: 2}
-  - wait: 0
-    duration: 1
+    audio: {fileID: 8300000, guid: 9a862e713db67744eb5358e8d28ae523, type: 3}
+  - wait: 1
+    duration: 5
     text: "Hmm, I don\u2019t remember. My mind feels fuzzy."
     trigger: {fileID: 11400000, guid: 1ab8f0ab83841e64d9ac6e3f123af29f, type: 2}
-  - wait: 0.5
+    audio: {fileID: 0}
+  - wait: 1.5
     duration: 1
     text: "Oh, well\u2026 Does it matter?"
     trigger: {fileID: 11400000, guid: feecc88a0979a1b458a3957f1e82cf93, type: 2}
+    audio: {fileID: 0}
   - wait: 0
     duration: 1
     text: This looks like a nice place.
     trigger: {fileID: 11400000, guid: bd649513632658f4f8edfdda5975ae03, type: 2}
+    audio: {fileID: 0}

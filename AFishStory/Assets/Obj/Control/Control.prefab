@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introScenario: {fileID: 11400000, guid: b75f6d0ff395fef4b983048bd13657b7, type: 2}
   revealer: {fileID: 6800245466038892800}
+  source: {fileID: 712190131100794552}
 --- !u!95 &2470114800323527840
 Animator:
   serializedVersion: 3
@@ -466,6 +467,12 @@ MonoBehaviour:
 --- !u!95 &6270560376945964164 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8377517784579701398, guid: 60977e78e15c49a4fb5b42b0c685f185,
+    type: 3}
+  m_PrefabInstance: {fileID: 2542120888176938514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &712190131100794552 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3072959472963825834, guid: 60977e78e15c49a4fb5b42b0c685f185,
     type: 3}
   m_PrefabInstance: {fileID: 2542120888176938514}
   m_PrefabAsset: {fileID: 0}

@@ -7,6 +7,7 @@ public struct TextEntry {
     public float duration;
     public string text;
     public GameEvent trigger;
+    public AudioClip audio;
 }
 
 [CreateAssetMenu(fileName = "TextStoryEntry", menuName = "AFishStory/TextStoryEntry", order = 0)]

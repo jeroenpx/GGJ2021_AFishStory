@@ -4216,6 +4216,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445b698707afaea48853953bcb4ad9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &924608732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924608730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d415624a52e7e724498ad7a39e7aa007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 0fa4eca8cfab0484283dc68ef0c1b630, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 924608733}
+        m_MethodName: EventThink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &924608733 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7307799274819831822, guid: a78b21f5501a37b42bd72bdbb2fc147e,
