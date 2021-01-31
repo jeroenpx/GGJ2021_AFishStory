@@ -108,6 +108,7 @@ public class StoryEvents : MonoBehaviour
 
     public void BackToMainMenu() {
         Debug.Log("Back to main menu");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TheEnd");
     }
 
     public IEnumerator StopMusicCo () {

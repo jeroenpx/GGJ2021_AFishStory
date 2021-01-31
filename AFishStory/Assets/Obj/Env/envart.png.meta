@@ -75,7 +75,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -179,9 +179,9 @@ TextureImporter:
       name: plant1
       rect:
         serializedVersion: 2
-        x: 530
+        x: 485
         y: 440
-        width: 85
+        width: 173
         height: 545
       alignment: 9
       pivot: {x: 0.2529577, y: 0.005043856}
@@ -200,9 +200,9 @@ TextureImporter:
       name: plant2
       rect:
         serializedVersion: 2
-        x: 678
+        x: 640
         y: 440
-        width: 61
+        width: 139
         height: 455
       alignment: 9
       pivot: {x: 0.605919, y: 0.013642229}
@@ -242,9 +242,9 @@ TextureImporter:
       name: plant3
       rect:
         serializedVersion: 2
-        x: 821
+        x: 779
         y: 440
-        width: 61
+        width: 134
         height: 324
       alignment: 9
       pivot: {x: 0.31464124, y: 0.011429021}
@@ -263,9 +263,9 @@ TextureImporter:
       name: plant4
       rect:
         serializedVersion: 2
-        x: 924
+        x: 890
         y: 442
-        width: 45
+        width: 116
         height: 264
       alignment: 9
       pivot: {x: 0.53589547, y: -0.00783296}

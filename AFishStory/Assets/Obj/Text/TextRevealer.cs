@@ -14,6 +14,8 @@ public class TextRevealer : MonoBehaviour
 	public TMP_Text text;
 	public UnityEvent allRevealed = new UnityEvent();
 
+    public string startWithText = "";
+
 
 	private string originalString;
 	private int nRevealedCharacters;
@@ -162,8 +164,12 @@ public class TextRevealer : MonoBehaviour
 
 	void Start()
 	{
-		if (string.IsNullOrEmpty(originalString))
-			RestartWithText(text.text);
+        if(startWithText !=null && startWithText.Length > 0) {
+            RestartWithText(startWithText);
+            RevealNextParagraphAsync();
+        } else {
+            RestartWithText(text.text);
+        }
 	}
 	
 }

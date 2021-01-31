@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - wait: 0
-    duration: 0.5
+    duration: 1
     text: Woooohooooo!
     trigger: {fileID: 0}
     audio: {fileID: 8300000, guid: 55e69b46542c55c42bb55d220910ea9c, type: 3}
-  - wait: 0
-    duration: 0.5
+  - wait: 1
+    duration: 2
     text: Wait, I ... remember this place!
     trigger: {fileID: 0}
     audio: {fileID: 8300000, guid: 2e908f08fd6a227488c840741857f3b5, type: 3}
-  - wait: 0
-    duration: 0.5
+  - wait: 0.2
+    duration: 1
     text: Bouncy mushrooms! I loved playing with those!
     trigger: {fileID: 0}
     audio: {fileID: 0}
   - wait: 0
-    duration: 0.5
+    duration: 1
     text: Yeah!
     trigger: {fileID: 0}
     audio: {fileID: 0}

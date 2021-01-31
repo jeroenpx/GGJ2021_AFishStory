@@ -34,7 +34,7 @@ MonoBehaviour:
     trigger: {fileID: 0}
     audio: {fileID: 0}
   - wait: 1
-    duration: 1
+    duration: 4
     text: Nooo, noo, no. I want to go away. Anywhere is better than here. I am scared.
       I miss them.
     trigger: {fileID: 11400000, guid: 3a9e6a2ef9dbf9d459aca04399e4bda3, type: 2}
