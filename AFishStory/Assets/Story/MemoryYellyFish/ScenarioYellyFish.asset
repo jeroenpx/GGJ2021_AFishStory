@@ -14,6 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - wait: 0
-    duration: 0
-    text: <todo story>
+    duration: 0.5
+    text: Hmmm
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0.5
+    text: These jellyfish... I know them, I remember!
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0.5
+    text: I think one is Bob.
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0.5
+    text: The other ones, Martin and Marry.
     trigger: {fileID: 0}

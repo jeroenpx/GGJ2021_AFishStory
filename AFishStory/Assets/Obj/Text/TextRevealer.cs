@@ -25,6 +25,9 @@ public class TextRevealer : MonoBehaviour
 
 	public void RestartWithText(string strText)
 	{
+        StopAllCoroutines();
+		isRevealing = false;
+
 		nRevealedCharacters = 0;
 		originalString = strText;
         if (originalString == "") {

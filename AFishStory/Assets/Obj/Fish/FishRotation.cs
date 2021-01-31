@@ -34,13 +34,17 @@ public class FishRotation : MonoBehaviour
         return GetMouseInScene() - transform.position;
     }
 
-    public void OnDash() {
-        StepCorrectRotation(TargetPointDir (), .5f);
+    public void OnDash(Vector3 target) {
+        Vector3 dir = target - transform.position;
+        dir.z = 0;
+        StepCorrectRotation(dir, .5f);
     }
 
-    public void OnSwim() {
+    public void OnSwim(Vector3 target) {
         // To be called from Fixed Update
-        StepCorrectRotation(TargetPointDir (), .1f);
+        Vector3 dir = target - transform.position;
+        dir.z = 0;
+        StepCorrectRotation(dir, .1f);
     }
 
     // Update is called once per frame

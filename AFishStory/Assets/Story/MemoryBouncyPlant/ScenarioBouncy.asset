@@ -17,3 +17,15 @@ MonoBehaviour:
     duration: 0.5
     text: Woooohooooo!
     trigger: {fileID: 0}
+  - wait: 0
+    duration: 0.5
+    text: Wait, I ... remember this place!
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0.5
+    text: Bouncy mushrooms! I loved playing with those!
+    trigger: {fileID: 0}
+  - wait: 0
+    duration: 0.5
+    text: Yeah!
+    trigger: {fileID: 0}

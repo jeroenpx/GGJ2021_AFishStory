@@ -33,7 +33,6 @@ public class StoryMgr : MonoBehaviour
     public void StartScenario(TextStoryEntry scenario) {
         running = true;
         StopAllCoroutines();
-        revealer.allRevealed.RemoveAllListeners();
         revealer.RestartWithText("");
         StartCoroutine(RunScenario(scenario));
     }
@@ -55,15 +54,15 @@ public class StoryMgr : MonoBehaviour
             if(e.trigger) {
                 e.trigger.Raise();
             }
-            bool completed = false;
-            UnityAction a = () => {
-                completed = true;
-            };
-            revealer.allRevealed.AddListener(a);
             Debug.Log("Trigger text: "+e.text);
+            bool moved = false;
             revealer.RestartWithText(e.text);
             IEnumerator sub = revealer.RevealNextParagraph();
             while(sub.MoveNext()) {
+                if(!moved) {
+                    Debug.Log("MoveNext");
+                    moved = true;
+                }
                 yield return sub.Current;
             }
             float duration = e.duration;

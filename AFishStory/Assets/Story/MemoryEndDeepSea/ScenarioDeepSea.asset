@@ -14,19 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - wait: 0
-    duration: 0
-    text: I remember ... a ... shark, noooo
+    duration: 0.5
+    text: Another memory...
     trigger: {fileID: 11400000, guid: 0c88496146fd1494f9038b8be15141b4, type: 2}
   - wait: 1
-    duration: 0
-    text: Nooo
+    duration: 0.5
+    text: ... a ... shark, noooo
     trigger: {fileID: 11400000, guid: 83ce2b2736a475544be11299428e57aa, type: 2}
   - wait: 1
-    duration: 0
+    duration: 0.5
+    text: Nooo
+    trigger: {fileID: 0}
+  - wait: 1
+    duration: 0.5
     text: 'Noo. I don''t want to remember. I don''t want to be here. '
     trigger: {fileID: 0}
   - wait: 1
-    duration: 0
+    duration: 1
     text: Nooo, noo, no. I want to go away. Anywhere is better than here. I am scared.
       I miss them.
     trigger: {fileID: 11400000, guid: 3a9e6a2ef9dbf9d459aca04399e4bda3, type: 2}
+  - wait: 5
+    duration: 1
+    text: ...
+    trigger: {fileID: 0}
+  - wait: 5
+    duration: 1
+    text: ... ...
+    trigger: {fileID: 0}
